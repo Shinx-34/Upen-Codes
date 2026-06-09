@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <stdio.h>//permite el uso de Printf y Scanf
 
 
 int main(){
     int numero1;
     int numero2;
     int i;
-    int suma = 0;
-    float promedio = 0;
-    int contador = 0;
+    int suma = 0;//guarda el resultado de las sumas
+    float promedio = 0;//se encarga de dividir el total de sumas 
+    int contador = 0;//colabora con promedio siendo encargado de contar las veces que se suma.
+    
     // Solicitar al usuario que ingrese el número inicial y final
     printf("Ingrese el numero inicial: ");
     scanf("%d", &numero1);
