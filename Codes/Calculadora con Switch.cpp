@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <iostream>//Para utilizar Cout y Cin
+using namespace std;//Evita usar std:: en cada uso del Cout y Cin
 
 int main(){
     int opcion;
@@ -14,7 +14,7 @@ int main(){
     cout<<"4. Division"<<endl;
     cin>>opcion;
 
-    //valida si la opcion ingresada es valida, si no lo es se le indicara al usuario que la opcion no es valida y se terminara el programa
+    //Termina el programa en caso de que la opcion ingresada no sea valida y evita preguntar al usuario los numeros y que queden sin utlizar.
     if (opcion<1 || opcion>4){ 
         cout<<"Opcion no valida"<<endl;
         return 0;
