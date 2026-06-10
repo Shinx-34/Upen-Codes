@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+#include <iostream>//necesario para que funcione el cin y cout
+#include <cmath>//necesario para que funcione la funcion pow
+using namespace std;//necesario para que no se tenga que escribir std:: antes de cada cin y cout
 
 int main(){
     //Se declaran las variables necesarias para cada funcion, en este caso unicamente el option
@@ -23,17 +23,21 @@ int main(){
         //a si no dejamos variables sin usar y el usuario va directo a la funcion que necesita.
         //muse siempre va a ser el resultado de cada funcion.
 
+        // x = valor que se desea evaluar
+        // a = punto donde inicia el crecimiento de la funcion
+        // c = punto donde la funcion alcanza el valor maximo
+        // muse = resultado de la funcion de membresia
         case 1:{// Funcion S
         double x, a, c, muse;
         
 
-        cout<<"Ingrese el valor de x: "; 
+        cout<<"Ingrese el valor de x (valor que sera evaluado): "; 
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del crecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de c: ";
+        cout<<"Ingrese el valor de c (Punto donde la funcion alcanza su valor maximo): ";
         cin>>c;
 
             //Se evalua la funcion S
@@ -57,15 +61,19 @@ int main(){
         }
     break;
        case 2:{ //Funcion Z
+        // x = valor que se desea evaluar
+        // a = punto donde inicia el decrecimiento de la funcion
+        // c = punto donde la funcion llega al valor minimo
+        // muse = resultado de la funcion de membresia
         double x, a, c, muse;
 
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del decrecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de c: ";
+        cout<<"Ingrese el valor de c (Punto donde la funcion llega al valor minimo): ";
         cin>>c;
 
         //Se evalua la funcion Z
@@ -92,17 +100,22 @@ int main(){
 
 
         case 3:{//Funcion N/pi
+        // x = valor que se desea evaluar
+        // a = inicio del crecimiento de la funcion
+        // c = longitud total de la funcion
+        // b = punto central que divide la parte S y la parte Z
+        // muse = resultado de la funcion de membresia
          double x,a,c,muse,b;
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del crecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de c: ";
+        cout<<"Ingrese el valor de c (Limite superior de la funcion): ";
         cin>>c;
 
-        cout<<"Ingrese el valor de b: ";
+        cout<<"Ingrese el valor de b (Valor que separa las dos partes de la funcion): ";
         cin>>b;
 
         //hace una evaluacion para determinar si x es menor o igual a b o mayor a b, para asi evaluar la funcion N/pi dependiendo del valor de x
@@ -154,14 +167,20 @@ int main(){
         break;  
 
         case 4:{//Funcion Gamma
+
+        // x = valor que se desea evaluar
+        // a = inicio del crecimiento de la funcion
+        // m = punto donde la funcion alcanza membresia maxima
+        // muse = resultado de la funcion de membresia
+
         double x,a,m,muse;
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del crecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de m: ";
+        cout<<"Ingrese el valor de m (Punto donde la funcion alcanza su valor maximo): ";
         cin>>m;
             //Se evalua la funcion Gamma dependiendo del valor de x, a y m
         if(x <= a){
@@ -180,14 +199,19 @@ int main(){
         break;
 
         case 5:{//Funcion L
+        
+        // x = valor que se desea evaluar
+        // a = inicio del decrecimiento de la funcion
+        // m = punto donde la funcion llega al valor minimo
+        // muse = resultado de la funcion de membresia
         double x,a,m,muse;
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del decrecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de m: ";
+        cout<<"Ingrese el valor de m (Punto donde la funcion llega al valor minimo): ";
         cin>>m;
 
             //Se evalua la funcion L dependiendo del valor de x, a y m
@@ -207,17 +231,23 @@ int main(){
         break;
 
         case 6:{//Funcion Triangular
+        
+        // x = valor que se desea evaluar
+        // a = inicio del crecimiento de la funcion
+        // m = punto donde la funcion alcanza su valor maximo
+        // b = fin del decrecimiento de la funcion
+        // muse = resultado de la funcion de membresia
         double x,a,m,b,muse;
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a (Inicio del crecimiento de la funcion): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de m: ";
+        cout<<"Ingrese el valor de m (punto donde la funcion alcanza su valor maximo): ";
         cin>>m;
 
-        cout<<"Ingrese el valor de b: ";
+        cout<<"Ingrese el valor de b (Fin del decrecimiento de la funcion): ";
         cin>>b;
 
         //Se evalua la funcion Triangular dependiendo del valor de x, a, m y b
@@ -240,20 +270,26 @@ int main(){
         break;
 
         case 7:{//Funcion Trapezoidal
+        // x = valor que se desea evaluar
+        // a = inicio del crecimiento
+        // b = inicio de la zona de membresia maxima
+        // c = fin de la zona de membresia maxima
+        // d = fin del decrecimiento de la funcion
+        // muse = resultado de la funcion de membresia
             double x,a,b,c,d,muse;
-        cout<<"Ingrese el valor de x: ";
+        cout<<"Ingrese el valor de x (valor que sera evaluado): ";
         cin>>x;
 
-        cout<<"Ingrese el valor de a: ";
+        cout<<"Ingrese el valor de a(inicio del crecimiento): ";
         cin>>a;
 
-        cout<<"Ingrese el valor de b: ";
+        cout<<"Ingrese el valor de b(inicio de la zona de membresia maxima): ";
         cin>>b;
 
-        cout<<"Ingrese el valor de c: ";
+        cout<<"Ingrese el valor de c(fin de la zona de membresia maxima): ";
         cin>>c;
 
-        cout<<"Ingrese el valor de d: ";
+        cout<<"Ingrese el valor de d(fin del decrecimiento de la funcion): ";
         cin>>d;
 
         //Se evalua la funcion Trapezoidal dependiendo del valor de x, a, b, c y d
